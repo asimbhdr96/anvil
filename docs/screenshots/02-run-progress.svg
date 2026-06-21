@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="240" viewBox="0 0 720 240">
+  <rect width="720" height="240" rx="10" fill="#0d1117"/>
+  <rect width="720" height="32" rx="10" fill="#161b22"/>
+  <rect y="22" width="720" height="10" fill="#161b22"/>
+  <circle cx="18" cy="16" r="6" fill="#ff5f57"/>
+  <circle cx="38" cy="16" r="6" fill="#febc2e"/>
+  <circle cx="58" cy="16" r="6" fill="#28c840"/>
+  <text x="80" y="20" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">anvil run</text>
+  <text x="24" y="58" fill="#3fb950" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13"> [1] planner</text>
+  <text x="24" y="82" fill="#3fb950" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13"> [2] researcher</text>
+  <text x="24" y="106" fill="#58a6ff" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">8 [3] synthesizer: Synthesizing report&</text>
+  <text x="24" y="130" fill="#6e7681" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">  [4] critic</text>
+  <text x="24" y="154" fill="#6e7681" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">  [5] scorer</text>
+  <text x="24" y="190" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">Parallel research branches · Gemini + Google Search grounding</text>
+  <text x="24" y="210" fill="#8b949e" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">Every model call appended to runs/&lt;id&gt;/trace.jsonl</text>
+</svg>

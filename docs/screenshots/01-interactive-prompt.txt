@@ -1,0 +1,6 @@
+Anvil — agentic research
+Type a technical question and press Enter. Commands start with /
+  branches 2  ·  budget $0.50  ·  depth quick
+  /help  /runs  /report [id]  /exit  ·  Ctrl+C to quit
+
+› Expo Router vs React Navigation for a new app?

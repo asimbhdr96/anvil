@@ -1,0 +1,9 @@
+✔ [1] planner
+⠸ [2] researcher: Researching (2 branches)…
+✔ [2] researcher
+⠼ [3] synthesizer: Synthesizing report…
+✔ [3] synthesizer
+⠴ [4] critic: Critiquing report…
+✔ [4] critic — passed
+⠦ [5] scorer: Scoring against rubric…
+✔ [5] scorer — score 100

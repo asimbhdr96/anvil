@@ -1,0 +1,22 @@
+Run complete
+  run id   8i6dn2
+  score    100/100
+  cost     $0.0128
+  report   runs/8i6dn2/report.md
+
+Report
+  run 8i6dn2
+
+# Expo Router vs React Navigation: A Decision Report for New App Development
+
+## Recommendation
+For a new React Native application within the Expo ecosystem, Expo Router is
+strongly recommended. Its file-based routing, automatic configurations, and
+seamless integration with Expo's tooling significantly accelerate initial setup
+and development speed…
+
+## Summary
+This report evaluates Expo Router and React Navigation for new React Native app
+development, focusing on ease of setup, feature flexibility, performance…
+
+Inspect: anvil inspect 8i6dn2

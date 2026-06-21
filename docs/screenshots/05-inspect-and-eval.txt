@@ -1,0 +1,14 @@
+Run 8i6dn2
+Question: Expo Router vs React Navigation for a new app?
+Status:   completed
+
+[1] planner
+[2] researcher
+[3] synthesizer
+[4] critic
+[5] scorer
+
+Eval result
+  score              100/100
+  citation coverage  100%
+  sub-Q coverage     100%
