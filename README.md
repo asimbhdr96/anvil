@@ -12,20 +12,16 @@ npm run dev
 
 ---
 
-## Why Anvil
-
-Most agent demos are chat loops in disguise — bots pass free-form text, nothing is typed, nothing is replayable.
-
 Anvil is built like a **small production agent system**:
 
-| Idea | What it means |
-|------|----------------|
-| **Typed contracts** | Agents exchange Zod-validated JSON artifacts, not chat |
+| Idea                  | What it means                                                    |
+| --------------------- | ---------------------------------------------------------------- |
+| **Typed contracts**   | Agents exchange Zod-validated JSON artifacts, not chat           |
 | **Grounded research** | Researcher agents use Gemini + Google Search with real citations |
-| **Parallel branches** | Multiple research angles run concurrently, then merge |
-| **Critic → repair** | Blockers trigger a focused repair pass, not blind retry |
-| **Eval harness** | Every run gets a rubric score + citation coverage |
-| **Event sourcing** | `trace.jsonl` logs every step — inspect, replay, diff |
+| **Parallel branches** | Multiple research angles run concurrently, then merge            |
+| **Critic → repair**   | Blockers trigger a focused repair pass, not blind retry          |
+| **Eval harness**      | Every run gets a rubric score + citation coverage                |
+| **Event sourcing**    | `trace.jsonl` logs every step — inspect, replay, diff            |
 
 ---
 
@@ -174,19 +170,19 @@ npm run dev -- run "your question" --branches 1 --budget 0.15 --depth quick
 
 ## Commands
 
-| Command | Description |
-|---------|-------------|
-| `anvil` | Interactive prompt (default) |
-| `anvil chat` | Same as above |
-| `anvil run "<question>"` | One-shot research |
-| `anvil run --quiet "<q>"` | Save report to disk only |
-| `anvil report <runId>` | Print a saved report |
-| `anvil runs` | List recent runs |
-| `anvil inspect <runId>` | Show pipeline steps |
-| `anvil inspect <id> --step 3` | Dump step input/output JSON |
-| `anvil replay <runId>` | Re-run from synthesizer using stored artifacts |
-| `anvil diff <idA> <idB>` | Compare two runs |
-| `anvil eval <runId>` | Re-score an existing run |
+| Command                       | Description                                    |
+| ----------------------------- | ---------------------------------------------- |
+| `anvil`                       | Interactive prompt (default)                   |
+| `anvil chat`                  | Same as above                                  |
+| `anvil run "<question>"`      | One-shot research                              |
+| `anvil run --quiet "<q>"`     | Save report to disk only                       |
+| `anvil report <runId>`        | Print a saved report                           |
+| `anvil runs`                  | List recent runs                               |
+| `anvil inspect <runId>`       | Show pipeline steps                            |
+| `anvil inspect <id> --step 3` | Dump step input/output JSON                    |
+| `anvil replay <runId>`        | Re-run from synthesizer using stored artifacts |
+| `anvil diff <idA> <idB>`      | Compare two runs                               |
+| `anvil eval <runId>`          | Re-score an existing run                       |
 
 **Interactive slash commands:** `/help` · `/runs` · `/report [id]` · `/exit`  
 **Ctrl+C** quits immediately (including mid-run).
@@ -197,23 +193,23 @@ npm run dev -- run "your question" --branches 1 --budget 0.15 --depth quick
 
 Every run writes to `runs/<id>/`:
 
-| File | Purpose |
-|------|---------|
-| `report.md` | Recommendation, tradeoffs, cited sections |
-| `trace.jsonl` | Event-sourced log (replay source of truth) |
-| `run.json` | Metadata — question, cost, score, status |
-| `sources.json` | Deduped citations from grounding |
-| `eval.json` | Rubric pass/fail + coverage metrics |
+| File           | Purpose                                    |
+| -------------- | ------------------------------------------ |
+| `report.md`    | Recommendation, tradeoffs, cited sections  |
+| `trace.jsonl`  | Event-sourced log (replay source of truth) |
+| `run.json`     | Metadata — question, cost, score, status   |
+| `sources.json` | Deduped citations from grounding           |
+| `eval.json`    | Rubric pass/fail + coverage metrics        |
 
 ---
 
 ## Configuration
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `ANVIL_GEMINI_API_KEY` | — | **Required.** Google AI Studio key |
-| `ANVIL_GEMINI_MODEL` | `gemini-2.5-flash` | Model id |
-| `ANVIL_RUNS_DIR` | `./runs` | Artifact output directory |
+| Variable               | Default            | Description                        |
+| ---------------------- | ------------------ | ---------------------------------- |
+| `ANVIL_GEMINI_API_KEY` | —                  | **Required.** Google AI Studio key |
+| `ANVIL_GEMINI_MODEL`   | `gemini-2.5-flash` | Model id                           |
+| `ANVIL_RUNS_DIR`       | `./runs`           | Artifact output directory          |
 
 **Free tier note:** Gemini free tier has daily request limits (~20/day for `gemini-2.5-flash`). Anvil uses ~5–7 API calls per run. Use `--branches 1` to reduce usage.
 
